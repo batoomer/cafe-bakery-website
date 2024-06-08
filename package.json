@@ -1,0 +1,22 @@
+{
+  "name": "cafe-bakery-website",
+  "version": "1.0.0",
+  "description": "This repository contains the source code for the fictional Mariposa Café & Bakery website project. The website is designed to showcase a cafe and bakery, built using HTML, JavaScript, CSS, and webpack.",
+  "author": "Batouchan Omer",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
