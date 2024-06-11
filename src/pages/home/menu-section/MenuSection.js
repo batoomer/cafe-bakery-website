@@ -9,7 +9,7 @@ export default class MenuSection{
 
     constructor(){
         this.#createHtmlTemplate();
-        //this.#addEventListeners();
+        this.#addEventListeners();
     };
 
     
@@ -67,9 +67,13 @@ export default class MenuSection{
     };
 
     #addEventListeners(){
-        this.#container.querySelector('button').addEventListener('click', () =>{
-            document.querySelector('.nav-btn[data-key="menu"').click();
-        })
+        console.log(this.#container.querySelectorAll('button'))
+        this.#container.querySelectorAll('button.home__menu-cta').forEach(btn => {
+            btn.addEventListener('click', () =>{
+                console.log('?')
+                document.querySelector('.nav-btn[data-key="menu"').click();
+            });
+        });
     };
 
     render(){
