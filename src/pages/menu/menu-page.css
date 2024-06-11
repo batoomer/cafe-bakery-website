@@ -1,0 +1,72 @@
+.menu__banner{
+    min-height: calc(4*var(--header-heigth));
+    padding: 0 5vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), 
+                url('../../assets/images/home-hero-background.jpg') no-repeat 50% 40% /cover;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    text-shadow: 2px 2px black;
+}
+
+.menu__banner h2{
+   font-size: 3rem;
+   margin-bottom: 1rem;
+}
+
+.menu__banner p {
+    font-size: 1.5rem;
+}
+
+.menu__category {
+    color: var(--secondary-color);
+    padding: 2rem 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    background-color: var(--accent-color-2);
+    
+}
+
+.page-wrapper .menu__category:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.menu__category > div img {
+    display: block;
+    width: 550px;
+    height: auto;
+}
+
+.menu__items-wrapper{
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+.menu__items-wrapper h2{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px dotted var(--secondary-color);
+}
+
+.menu__items-wrapper li{
+    margin-left: 1rem;
+}
+
+.menu__items-wrapper li + li {
+    margin-top: 1.5rem ;
+}
+
+.menu__menu-item h3 {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu__menu-item p {
+    color: var(--accent-color-3);
+}
