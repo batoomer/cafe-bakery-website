@@ -7,20 +7,15 @@ export default class HomePage{
 
     #container = document.createElement('div');
 
-    constructor(){
-        
-    }
-
-    render(){
+    #createHtmlTemplate(){
         this.#container.appendChild(new HeroSection().render());
         this.#container.appendChild(new AboutSection().render());
         this.#container.appendChild(new FillerSection().render());
         this.#container.appendChild(new MenuSection().render());
+    };
 
-
-        
-        
-
+    render(){
+        this.#createHtmlTemplate();
         return this.#container;
-    }
+    };
 };
