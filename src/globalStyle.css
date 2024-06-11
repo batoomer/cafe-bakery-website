@@ -16,7 +16,6 @@
     --accent-color-1: #9BB6AF;
     --accent-color-2: #F9E5CD;
     --accent-color-3: #D7AE87;
-   
 }
 
 
@@ -76,3 +75,78 @@ main {
 
 }
 /* MAIN STYLE END */
+
+
+/* START FOOTER STYLE */
+.footer {
+    background-color: var(--secondary-color);
+    color: var(--accent-color-2);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 4rem 10vw 1rem 10vw;
+}
+
+.footer svg {
+    display: inline;
+    width: 1.5rem;
+    vertical-align: text-bottom;
+    margin-right: 0.25rem;
+    color: var(--accent-color-2);
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--hero-color-sec);
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+
+.footer a:hover {
+    color: var(--accent-color-3);
+}
+
+.footer > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer > ul > :first-child{
+    margin-bottom: 1rem;
+    color: var(--accent-color-3);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.footer > :first-child{
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 25%;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.footer > :first-child p{
+    font-size: 1.5rem;
+    width: 50%;
+}
+
+.footer > :first-child img {
+    height: 125px;
+    width: auto;
+    display: block;
+}
+
+.footer > :last-child {
+    font-size: 0.75rem;
+    flex: 1 0 100%;
+    padding: 1rem 1rem 0 1rem;
+    text-align: center;
+}
+
+/* END FOOTER STYLE */
