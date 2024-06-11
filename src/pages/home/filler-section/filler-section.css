@@ -1,0 +1,55 @@
+/* Home Filler Section */
+.home__filler {
+    background-color: var(--secondary-color);
+    display: flex;
+    height: 500px;
+}
+
+/* Filler Image */
+.home__filler-image {
+    flex: 0 0 45%;
+}
+
+.home__filler-image img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Filler Quote */
+.home__filler-quote {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__filler-quote > blockquote {
+    color: var(--accent-color-2);
+    font-style: italic;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    text-align: justify;
+    width: 60%;
+    position: relative;
+    border-left: 0.25rem solid var(--accent-color-1);
+    padding: 0.25rem 1rem 0.25rem 3rem;
+    
+}
+
+.home__filler-quote > blockquote::before {
+    content: "\201C";
+    color: var(--accent-color-1);
+    font-size: 5rem;
+    position: absolute;
+    top: -2rem;
+    left: 0rem;
+}
+
+.home__filler-quote > blockquote span {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+}
