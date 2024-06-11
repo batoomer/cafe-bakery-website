@@ -13,7 +13,7 @@
 .home__menu-cards{
     display: flex;
     justify-content: center;
-    gap: 5vw;
+    gap: 2vw;
 }
 
 .home__menu-card{
