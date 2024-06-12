@@ -1,0 +1,75 @@
+.about__page-wrapper{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+                url('../../assets/images/about-background.jpg') no-repeat 50% 80% / cover;
+
+    background-attachment: fixed;
+    padding: 2rem 5vw 5rem 5vw;   
+}
+
+
+.about__intro{
+    min-height: calc(4*var(--header-heigth));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    text-shadow: 2px 2px black;
+}
+
+.about__intro h2{
+   font-size: 3rem;
+   margin-bottom: 1rem;
+}
+
+.about__intro p {
+    font-size: 1.5rem;
+}
+
+
+.about__about-us,
+.about__vision-values,
+.about__commitment{
+    width: 675px;
+    background-color: var(--accent-color-2);
+    color: var(--secondary-color);
+    border-radius: 2rem;
+    border: 0.1rem solid var(--secondary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.306);
+}
+
+.about__vision-values{
+    margin-left: auto;
+}
+
+.about__page-wrapper .container{
+    padding: 3rem;
+    line-height: 1.7;
+    text-align: justify;
+    position: relative;
+    
+}
+
+.about__page-wrapper .container::before{
+    content: "";
+    width: 10px;
+    height: 100%;
+    background-color: var(--accent-color-3);
+    position: absolute;
+    right: 1.5rem;
+    top: 0;
+}
+
+.about__page-wrapper :nth-child(odd) .container::before{
+    left: 1.5rem;
+    right: initial;
+}
+
+.about__page-wrapper .container h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.about__page-wrapper .container p + p {
+    margin-top: 1rem;
+}
